@@ -20,28 +20,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // The FAB-code can be removed
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        // 0. Enable Internet access for your App
-        // 1. Create a WebView element in the layout file content_main.xml
-        // 2. Give the WebView element ID "my_webview"
-        // -- Commit and push to your github fork
-        // 3. Create a private member variable called "myWebView" of type WebView
-        // 4. Locate the WebView element created in step 1 using the ID created in step 2
-        // 5. Create a new WebViewClient to attach to our WebView. This allows us to
-        //    browse the web inside our app.
-        // -- Commit and push to your github fork
-        // 6. Enable Javascript execution in your WebViewClient
-        // 7. Enter the url to load in our WebView
-        // -- Commit and push to your github fork
-        // 8. Take a snapshot showing your App
+
+        //lägger webview element
+        //WebView webView = new WebView(this);
+
+        //här görs detta element aktivt
+        //setContentView(webView);
+
+        //ladda in webbsidan
+
+        //webView.loadUrl("http://wwwlab.iit.his.se/a18mahkh/goingFishing.html");
+
+        //webView.loadUrl("file:///android_asset/about.html");
     }
 
     @Override
