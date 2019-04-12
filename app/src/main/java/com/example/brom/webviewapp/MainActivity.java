@@ -8,10 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
-
+    private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         /* This code is run when the App is created. Include code that creates your WebView */
@@ -22,16 +23,22 @@ public class MainActivity extends AppCompatActivity {
 
 
         //lägger webview element
-        //WebView webView = new WebView(this);
+       //WebView webView = new WebView(this);
+
+        webView = (WebView) findViewById(R.id.headerLogo);
+
+        //WebView myWebView = (WebView) findViewById(R.id.headerLogo);
 
         //här görs detta element aktivt
-        //setContentView(webView);
+      // setContentView(webView);
 
         //ladda in webbsidan
 
         //webView.loadUrl("http://wwwlab.iit.his.se/a18mahkh/goingFishing.html");
 
-        //webView.loadUrl("file:///android_asset/about.html");
+        webView.loadUrl("file:///android_asset/about.html");
+
+
     }
 
     @Override

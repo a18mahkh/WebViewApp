@@ -20,9 +20,22 @@
 
 
     <WebView
+        android:id="@+id/headerLogo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" android:id="@+id/header">
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
+        <Button
+            android:id="@+id/internalBtn"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:text="Internal Webpage"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="50dp" />
     </WebView>
 
 
